@@ -58,7 +58,7 @@ PinCmd::PinCmd(Config* conf, const char* configFile, const char* outputDir, uint
 
     // quick fix for
     args.push_back("-injection");
-    args.push_back("child");
+    args.push_back("parent");
 
     //Additional options (e.g., -smc_strict for Java), parsed from config
     const char* pinOptions = conf->get<const char*>("sim.pinOptions", "");
